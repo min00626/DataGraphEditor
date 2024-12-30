@@ -1,0 +1,201 @@
+{
+  "quests": [
+    {
+      "index": 0,
+      "condition": {
+        "parentIndices": [],
+        "delayToBeAcceptable": 0
+      },
+      "info": {
+        "name": "Get Ingredients",
+        "description": "Get Ingredients for dinner",
+        "rewardItems": [],
+        "rewardLenbo": 0
+      },
+      "stages": [
+        {
+          "index": 0,
+          "description": "Go to grocery store",
+          "dialogues": [],
+          "condition": {
+            "itemConditions": [],
+            "dialogueConditions": []
+          },
+          "children": [
+            1,
+            2,
+            3
+          ],
+          "eventIndex_OnStart": -1,
+          "eventIndex_OnEnd": -1,
+          "stageRewardItems": [],
+          "isLastStage": false
+        },
+        {
+          "index": 1,
+          "description": "Get vegetable",
+          "dialogues": [
+            {
+              "npc": 2,
+              "dialogueIndex": 0
+            }
+          ],
+          "condition": {
+            "itemConditions": [],
+            "dialogueConditions": [
+              0
+            ]
+          },
+          "children": [
+            4
+          ],
+          "eventIndex_OnStart": -1,
+          "eventIndex_OnEnd": -1,
+          "stageRewardItems": [
+            {
+              "item": 0,
+              "amount": 1
+            }
+          ],
+          "isLastStage": false
+        },
+        {
+          "index": 2,
+          "description": "Get beef",
+          "dialogues": [
+            {
+              "npc": 3,
+              "dialogueIndex": 1
+            }
+          ],
+          "condition": {
+            "itemConditions": [],
+            "dialogueConditions": [
+              1
+            ]
+          },
+          "children": [
+            4
+          ],
+          "eventIndex_OnStart": -1,
+          "eventIndex_OnEnd": -1,
+          "stageRewardItems": [
+            {
+              "item": 1,
+              "amount": 1
+            }
+          ],
+          "isLastStage": false
+        },
+        {
+          "index": 3,
+          "description": "Get apple",
+          "dialogues": [
+            {
+              "npc": 4,
+              "dialogueIndex": 2
+            }
+          ],
+          "condition": {
+            "itemConditions": [],
+            "dialogueConditions": [
+              2
+            ]
+          },
+          "children": [
+            4
+          ],
+          "eventIndex_OnStart": -1,
+          "eventIndex_OnEnd": -1,
+          "stageRewardItems": [
+            {
+              "item": 2,
+              "amount": 1
+            }
+          ],
+          "isLastStage": false
+        },
+        {
+          "index": 4,
+          "description": "Buy ingredients",
+          "dialogues": [
+            {
+              "npc": 1,
+              "dialogueIndex": 3
+            }
+          ],
+          "condition": {
+            "itemConditions": [],
+            "dialogueConditions": [
+              3
+            ]
+          },
+          "children": [],
+          "eventIndex_OnStart": -1,
+          "eventIndex_OnEnd": -1,
+          "stageRewardItems": [],
+          "isLastStage": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "condition": {
+        "parentIndices": [
+          0
+        ],
+        "delayToBeAcceptable": 0
+      },
+      "info": {
+        "name": "Make salad",
+        "description": "Make delicious salad",
+        "rewardItems": [
+          {
+            "item": 3,
+            "amount": 1
+          }
+        ],
+        "rewardLenbo": 0
+      },
+      "stages": []
+    },
+    {
+      "index": 2,
+      "condition": {
+        "parentIndices": [
+          0
+        ],
+        "delayToBeAcceptable": 0
+      },
+      "info": {
+        "name": "Cook steak",
+        "description": "Cook delicious steak",
+        "rewardItems": [
+          {
+            "item": 4,
+            "amount": 1
+          }
+        ],
+        "rewardLenbo": 0
+      },
+      "stages": []
+    },
+    {
+      "index": 3,
+      "condition": {
+        "parentIndices": [
+          1,
+          2
+        ],
+        "delayToBeAcceptable": 0
+      },
+      "info": {
+        "name": "Have dinner",
+        "description": "Nice!",
+        "rewardItems": [],
+        "rewardLenbo": 0
+      },
+      "stages": []
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dff56ac73b02d394eb1342f848065b13, type: 3}
+  m_Name: ba99f41937a6b004eb6ecc36e9b4d43f
+  m_EditorClassIdentifier: 
+  m_nodes:
+  - rid: 8351715088513892619
+  - rid: 8351715088513892620
+  - rid: 8351715088513892621
+  - rid: 8351715088513892622
+  - rid: 8351715088513892623
+  m_edges:
+  - outputPort:
+      nodeId: 738ba95c441d73943abfa78fd7a0033d
+      portIndex: 1
+    inputPort:
+      nodeId: e091e2733e86615449644caaf055fa53
+      portIndex: 0
+  - outputPort:
+      nodeId: 738ba95c441d73943abfa78fd7a0033d
+      portIndex: 1
+    inputPort:
+      nodeId: f23e3b63923642a4bad7c8c5766fdcf2
+      portIndex: 0
+  - outputPort:
+      nodeId: 738ba95c441d73943abfa78fd7a0033d
+      portIndex: 1
+    inputPort:
+      nodeId: b6c3d51643be2554ebad017a8def0cbf
+      portIndex: 0
+  - outputPort:
+      nodeId: e091e2733e86615449644caaf055fa53
+      portIndex: 1
+    inputPort:
+      nodeId: 1bb0614b0dd43044d848b3c7a7ff2ed5
+      portIndex: 0
+  - outputPort:
+      nodeId: f23e3b63923642a4bad7c8c5766fdcf2
+      portIndex: 1
+    inputPort:
+      nodeId: 1bb0614b0dd43044d848b3c7a7ff2ed5
+      portIndex: 0
+  - outputPort:
+      nodeId: b6c3d51643be2554ebad017a8def0cbf
+      portIndex: 1
+    inputPort:
+      nodeId: 1bb0614b0dd43044d848b3c7a7ff2ed5
+      portIndex: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 8351715088513892619
+      type: {class: QuestStageNode, ns: DataGraph, asm: DataGraph.Editor}
+      data:
+        m_guid: 738ba95c441d73943abfa78fd7a0033d
+        m_position:
+          serializedVersion: 2
+          x: 390
+          y: 322
+          width: 122
+          height: 94
+        typeName: DataGraph.QuestStageNode, DataGraph.Editor, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        Name: Go to grocery store
+        Description: 
+        IsLastStage: 0
+        Dialogues: []
+        RewardItems: []
+        ItemConditions: []
+        DialogueConditions: 
+        EventIndex_OnStart: -1
+        EventIndex_OnEnd: -1
+    - rid: 8351715088513892620
+      type: {class: QuestStageNode, ns: DataGraph, asm: DataGraph.Editor}
+      data:
+        m_guid: e091e2733e86615449644caaf055fa53
+        m_position:
+          serializedVersion: 2
+          x: 659
+          y: 173
+          width: 122
+          height: 108
+        typeName: DataGraph.QuestStageNode, DataGraph.Editor, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        Name: Get vegetable
+        Description: 
+        IsLastStage: 0
+        Dialogues:
+        - npc: 2
+          dialogueIndex: 0
+        RewardItems:
+        - item: 0
+          amount: 1
+        ItemConditions: []
+        DialogueConditions: 00000000
+        EventIndex_OnStart: -1
+        EventIndex_OnEnd: -1
+    - rid: 8351715088513892621
+      type: {class: QuestStageNode, ns: DataGraph, asm: DataGraph.Editor}
+      data:
+        m_guid: f23e3b63923642a4bad7c8c5766fdcf2
+        m_position:
+          serializedVersion: 2
+          x: 659
+          y: 321
+          width: 122
+          height: 108
+        typeName: DataGraph.QuestStageNode, DataGraph.Editor, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        Name: Get beef
+        Description: 
+        IsLastStage: 0
+        Dialogues:
+        - npc: 3
+          dialogueIndex: 1
+        RewardItems:
+        - item: 1
+          amount: 1
+        ItemConditions: []
+        DialogueConditions: 01000000
+        EventIndex_OnStart: -1
+        EventIndex_OnEnd: -1
+    - rid: 8351715088513892622
+      type: {class: QuestStageNode, ns: DataGraph, asm: DataGraph.Editor}
+      data:
+        m_guid: b6c3d51643be2554ebad017a8def0cbf
+        m_position:
+          serializedVersion: 2
+          x: 659
+          y: 469
+          width: 122
+          height: 108
+        typeName: DataGraph.QuestStageNode, DataGraph.Editor, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        Name: Get apple
+        Description: 
+        IsLastStage: 0
+        Dialogues:
+        - npc: 4
+          dialogueIndex: 2
+        RewardItems:
+        - item: 2
+          amount: 1
+        ItemConditions: []
+        DialogueConditions: 02000000
+        EventIndex_OnStart: -1
+        EventIndex_OnEnd: -1
+    - rid: 8351715088513892623
+      type: {class: QuestStageNode, ns: DataGraph, asm: DataGraph.Editor}
+      data:
+        m_guid: 1bb0614b0dd43044d848b3c7a7ff2ed5
+        m_position:
+          serializedVersion: 2
+          x: 886
+          y: 322
+          width: 122
+          height: 94
+        typeName: DataGraph.QuestStageNode, DataGraph.Editor, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        Name: Buy ingredients
+        Description: 
+        IsLastStage: 1
+        Dialogues:
+        - npc: 1
+          dialogueIndex: 3
+        RewardItems: []
+        ItemConditions: []
+        DialogueConditions: 03000000
+        EventIndex_OnStart: -1
+        EventIndex_OnEnd: -1

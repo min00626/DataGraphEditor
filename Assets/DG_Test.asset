@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dff56ac73b02d394eb1342f848065b13, type: 3}
+  m_Name: DG_Test
+  m_EditorClassIdentifier: 
+  m_nodes:
+  - rid: 8351715088513892615
+  - rid: 8351715088513892616
+  - rid: 8351715088513892617
+  - rid: 8351715088513892618
+  m_edges:
+  - outputPort:
+      nodeId: ba99f41937a6b004eb6ecc36e9b4d43f
+      portIndex: 1
+    inputPort:
+      nodeId: 889fa8c0c966e4149a6006b6682321dc
+      portIndex: 0
+  - outputPort:
+      nodeId: ba99f41937a6b004eb6ecc36e9b4d43f
+      portIndex: 1
+    inputPort:
+      nodeId: 0b0caef95ae8932489379e23f024dacf
+      portIndex: 0
+  - outputPort:
+      nodeId: 889fa8c0c966e4149a6006b6682321dc
+      portIndex: 1
+    inputPort:
+      nodeId: 54f7e9ad8887fc04b94ba18561805dd9
+      portIndex: 0
+  - outputPort:
+      nodeId: 0b0caef95ae8932489379e23f024dacf
+      portIndex: 1
+    inputPort:
+      nodeId: 54f7e9ad8887fc04b94ba18561805dd9
+      portIndex: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 8351715088513892615
+      type: {class: QuestNode, ns: DataGraph, asm: DataGraph.Editor}
+      data:
+        m_guid: ba99f41937a6b004eb6ecc36e9b4d43f
+        m_position:
+          serializedVersion: 2
+          x: 352
+          y: 297
+          width: 0
+          height: 0
+        typeName: DataGraph.QuestNode, DataGraph.Editor, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        Name: Get Ingredients
+        Description: Get Ingredients for dinner
+        m_stageGraph: {fileID: 11400000, guid: a56c3b5f5d1bc4c488c2f51c3b8e3425, type: 2}
+        DelayToBeAcceptable: 0
+        rewardItems: []
+        RewardLenbo: 0
+        ShowReward: 1
+    - rid: 8351715088513892616
+      type: {class: QuestNode, ns: DataGraph, asm: DataGraph.Editor}
+      data:
+        m_guid: 889fa8c0c966e4149a6006b6682321dc
+        m_position:
+          serializedVersion: 2
+          x: 639
+          y: 215
+          width: 122
+          height: 94
+        typeName: DataGraph.QuestNode, DataGraph.Editor, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        Name: Make salad
+        Description: Make delicious salad
+        m_stageGraph: {fileID: 11400000, guid: 3a2856ee5e406304481ca2171215885b, type: 2}
+        DelayToBeAcceptable: 0
+        rewardItems:
+        - item: 3
+          amount: 1
+        RewardLenbo: 0
+        ShowReward: 1
+    - rid: 8351715088513892617
+      type: {class: QuestNode, ns: DataGraph, asm: DataGraph.Editor}
+      data:
+        m_guid: 0b0caef95ae8932489379e23f024dacf
+        m_position:
+          serializedVersion: 2
+          x: 639
+          y: 400
+          width: 122
+          height: 94
+        typeName: DataGraph.QuestNode, DataGraph.Editor, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        Name: Cook steak
+        Description: Cook delicious steak
+        m_stageGraph: {fileID: 11400000, guid: d95ac0d97750695458e9f50e5a508aa5, type: 2}
+        DelayToBeAcceptable: 0
+        rewardItems:
+        - item: 4
+          amount: 1
+        RewardLenbo: 0
+        ShowReward: 1
+    - rid: 8351715088513892618
+      type: {class: QuestNode, ns: DataGraph, asm: DataGraph.Editor}
+      data:
+        m_guid: 54f7e9ad8887fc04b94ba18561805dd9
+        m_position:
+          serializedVersion: 2
+          x: 869
+          y: 290
+          width: 122
+          height: 94
+        typeName: DataGraph.QuestNode, DataGraph.Editor, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        Name: Have dinner
+        Description: Nice!
+        m_stageGraph: {fileID: 11400000, guid: 6026243b8dc433c4abe44a538d1dda52, type: 2}
+        DelayToBeAcceptable: 0
+        rewardItems: []
+        RewardLenbo: 0
+        ShowReward: 1
